@@ -27,6 +27,11 @@
 			renderer.setSize(window.innerWidth, window.innerHeight);
 			var camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 0.1, 3000);
 			var scene = new THREE.Scene();
+			var cube = new THREE.BoxGeometry(100, 100, 100);
+			var material = new THREE.MeshBasicMaterial();
+			var mesh = new THREE.Mesh(cube, material);
+			mesh.position.set(0, 0, -1000);
+			scene.add(mesh);
 			renderer.render(scene, camera);
 		</script>
 	</body>
