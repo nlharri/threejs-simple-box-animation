@@ -25,7 +25,10 @@
 			renderer.setClearColor(0x48D3CE);
 			renderer.setPixelRatio(window.devicePixelRatio);
 			renderer.setSize(window.innerWidth, window.innerHeight);
-			var camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 0.1, 3000);
+			var camera = new THREE.PerspectiveCamera(35, 
+								 window.innerWidth / window.innerHeight, 
+								 0.1, 
+								 3000);
 			var scene = new THREE.Scene();
 			var cube = new THREE.BoxGeometry(100, 100, 100);
 			var material = new THREE.MeshBasicMaterial();
